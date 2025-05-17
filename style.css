@@ -3,13 +3,44 @@ body {
   font-family: sans-serif;
   padding: 20px;
   background-color: #f4f4f4;
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
-#quiz-container {
+
+#app {
+  max-width: 600px;
+  width: 100%;
   background: white;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+#quiz-container, #result-container {
+  margin-top: 20px;
+}
+
 button {
   display: block;
-  margin-top: 10px;
+  margin: 12px auto;
+  padding: 16px 20px;
+  font-size: 18px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.02);
+}
+
+h1, h2 {
+  text-align: center;
 }
